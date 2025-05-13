@@ -1,0 +1,58 @@
+body, html {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, gold, red, purple);
+  color: white;
+}
+
+canvas#bg {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem;
+  text-align: center;
+}
+
+.pop-text {
+  font-size: 3rem;
+  animation: pop 1s ease infinite alternate;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
+.pickup {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: none;
+  background: gold;
+  color: purple;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: white;
+  color: red;
+}
+
+.meter {
+  margin-top: 2rem;
+}
+
+input[type=range] {
+  width: 300px;
+}
